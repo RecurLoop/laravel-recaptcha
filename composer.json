@@ -1,0 +1,40 @@
+{
+    "name": "recurloop/laravel-recaptcha",
+    "description": "Laravel package for Recaptcha V3.",
+    "keywords": [
+        "captcha",
+        "recaptcha",
+        "laravel",
+        "php"
+    ],
+    "homepage": "https://github.com/recurloop/laravel-recaptcha",
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/container": "~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/http": "~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "guzzlehttp/guzzle": "^6.2|^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RecurLoop"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RecurLoop\\Recaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RecurLoop\\Recaptcha\\Providers\\RecaptchaServiceProvider"
+            ],
+            "aliases": {
+                "Recaptcha": "RecurLoop\\Recaptcha\\Facades\\Recaptcha"
+            }
+        }
+    },
+    "minimum-stability": "alpha"
+}
